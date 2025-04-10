@@ -1,54 +1,38 @@
-# React + TypeScript + Vite
+# 🧵 Isa Bordando - E-commerce
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é um projeto de e-commerce fictício criado para praticar e aplicar conceitos de desenvolvimento front-end com React.
 
-Currently, two official plugins are available:
+## 🚀 Tecnologias utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React
+- TypeScript
+- Vite
+- HTML e CSS (pré-existentes)
+- Componentização
+- Responsividade
+- Boas práticas de UI/UX
 
-## Expanding the ESLint configuration
+## 🎯 Objetivo
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Refatorar um projeto de loja virtual previamente feito com HTML, CSS e JavaScript puro, aplicando os conceitos modernos de desenvolvimento com React. A proposta é construir uma interface mais escalável, reutilizável e alinhada ao modelo de Single Page Application (SPA).
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 🛠️ Funcionalidades (em desenvolvimento)
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- [x] Componente Header
+- [x] Componente Banner
+- [ ] Listagem de produtos
+- [ ] Filtro de busca
+- [ ] Página de login
+- [ ] Página de produto individual
+- [ ] Carrinho de compras
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## ✨ Resultado esperado
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+Uma SPA funcional, responsiva e visualmente agradável para demonstrar habilidades com React. O projeto pode futuramente ser integrado a uma API feita com Node.js.
+
+## 👩‍💻 Desenvolvido por
+
+**Ataíze Feitosa**  
+[LinkedIn](https://www.linkedin.com/in/ataizefeitosa) | [Portfólio](https://ataize.github.io/Portfolio-AtaizeFeitosa) | [Frontend Mentor](https://www.frontendmentor.io/profile/Ataize)
+
+---
