@@ -1,5 +1,5 @@
 import "./Header.css";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/logo-1.png";
 function Header() {
   return (
     <header className="menu">
