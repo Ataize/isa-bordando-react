@@ -83,6 +83,12 @@
   color: #9e5588;
   text-decoration: none;
 }
+.gallery__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
 @media screen and (max-width: 768px) {
   .gallery {
     width: 90%;

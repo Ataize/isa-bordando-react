@@ -1,7 +1,7 @@
 import "./App.css";
 import Banner from "./components/Banner/Banner";
-import CustomGallery from "./components/CustomGallery/CustomGallery";
 import Header from "./components/Header/Header";
+import HomeGallery from "./components/HomeGallery/HomeGallery";
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
       <Header />
       <main>
         <Banner />
-        <CustomGallery />
+        <HomeGallery />
       </main>
     </>
   );
