@@ -5,7 +5,7 @@
   flex-wrap: wrap;
   align-items: flex-start;
   padding: 0px;
-  justify-content: center;
+  justify-content: end;
   align-content: center;
 }
 .gallery__section {
@@ -17,17 +17,25 @@
   margin-left: 0;
 }
 .gallery__products {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 0px;
   justify-content: center;
-  position: static;
-  width: 176px;
-  height: 252px;
+  position: static; */
+  display: flex;
+  width: 100%;
+  max-width: 180px;
+  height: auto;
   left: 0px;
   top: 0px;
-  margin: 16px 10px;
+  /* margin: 16px 10px; */
+}
+.gallery__products a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 .gallery__products:nth-child(1) {
   margin-left: 0;
@@ -41,16 +49,9 @@
   padding: 30px 5px 30px 5px;
 }
 .gallery__seeAll {
-  font-size: 16px;
-  line-height: 19px;
-  font-style: normal;
+  font-size: 1.2rem;
   font-weight: 700;
   color: #9e5588;
-  width: 97px;
-
-  height: 24px;
-  left: 1036px;
-  top: 7px;
   text-decoration: none;
 }
 .gallery__seeAll:after {
@@ -62,12 +63,11 @@
   border-radius: 5px;
 }
 .gallery__productDescription {
-  font-weight: 500;
   font-size: 1.2rem;
-  line-height: 16px;
   color: #464646;
   margin-bottom: 0;
   justify-content: center;
+  text-align: center;
 }
 .gallery__price {
   font-weight: 700;
@@ -84,27 +84,34 @@
   text-decoration: none;
 }
 .gallery__container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+  justify-items: center;
+  padding: 1rem;
 }
+
 @media screen and (max-width: 768px) {
   .gallery {
     width: 90%;
     /* justify-content: space-between; */
     margin: 0;
   }
+  .gallery__container {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0.5rem;
+    gap: 1rem;
+    justify-items: center; /* Centraliza horizontalmente */
+    align-items: center;
+  }
   .gallery__title {
     border: 0;
     font-size: 16px;
   }
   .gallery__products {
-    width: 120px;
-    height: auto;
-    margin: 20 0;
-    align-items: center;
-    flex-wrap: wrap;
+    max-width: 100%;
+    margin: 10px 0;
   }
   .gallery__image {
     width: 110px;

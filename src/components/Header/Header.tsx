@@ -1,6 +1,8 @@
 import "./Header.css";
 import logo from "../../assets/logo-1.png";
-function Header() {
+import { HeaderProps } from "../../types/Product";
+
+function Header({ onSearchChange }: HeaderProps) {
   return (
     <header className="menu">
       <div className="menu__principal">
@@ -14,6 +16,7 @@ function Header() {
           type="text"
           placeholder="Buscar"
           id="filtrar-produto"
+          onChange={(e) => onSearchChange(e.target.value)}
         />
         <a href="/login">
           <button className="menu__login Botao1" type="button">

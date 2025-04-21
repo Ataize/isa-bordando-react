@@ -11,3 +11,9 @@ export interface Product {
   category: string;
   imageUrl: string;
 }
+export interface HeaderProps {
+  onSearchChange: (value: string) => void;
+}
+export interface HomeGalleryProps {
+  searchTerm: string;
+}

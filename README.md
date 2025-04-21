@@ -20,8 +20,8 @@ Refatorar um projeto de loja virtual previamente feito com HTML, CSS e JavaScrip
 
 - [x] Componente Header
 - [x] Componente Banner
-- [ ] Listagem de produtos
-- [ ] Filtro de busca
+- [x] Listagem de produtos
+- [x] Filtro de busca
 - [ ] Página de login
 - [ ] Página de produto individual
 - [ ] Carrinho de compras

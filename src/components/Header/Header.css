@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding: 1rem 0;
 }
 .menu__principal {
   display: flex;
@@ -20,18 +21,25 @@
 .menu__buscar {
   background-image: url(../../assets/Icone.png);
   background-repeat: no-repeat;
-  border: transparent;
+  background-position: 90% center;
+
   width: 30%;
   height: 40px;
-  left: calc(50% - 393px / 2 + 104px);
-  top: 5px;
   padding: 8px 16px;
-  background-color: #efe4dc;
+  padding-right: 40px; /* espaço para não escrever por cima da lupa */
 
+  border: 2px solid #9e5588;
   border-radius: 20px;
+
+  background-color: #efe4dc;
   font-size: 0.9rem;
-  background-position: right;
-  background-position-x: 90%;
+
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.menu__buscar:focus {
+  outline: none;
+  border-color: #c47aa4;
+  box-shadow: 0 0 0 2px rgba(196, 122, 164, 0.3);
 }
 .menu__navBotao {
   text-decoration: none;
