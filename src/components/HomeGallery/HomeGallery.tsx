@@ -12,7 +12,7 @@ const HomeGallery = ({ searchTerm }: HomeGalleryProps) => {
   };
   const personalizados = filterProducts("personalizados", searchTerm);
   const diversos = filterProducts("diversos", searchTerm);
-  const prontaEntrega = filterProducts("pronta-entrega", searchTerm);
+  const prontaEntrega = filterProducts("Pronta Entrega", searchTerm);
 
   const hasProducts =
     personalizados.length > 0 ||
