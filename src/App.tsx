@@ -3,6 +3,7 @@ import { useState } from "react";
 import Banner from "./components/Banner/Banner";
 import Header from "./components/Header/Header";
 import HomeGallery from "./components/HomeGallery/HomeGallery";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -17,6 +18,7 @@ function App() {
         <Banner />
         <HomeGallery searchTerm={searchTerm} />
       </main>
+      <Footer />
     </>
   );
 }

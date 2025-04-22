@@ -36,6 +36,12 @@
 
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
+.menu__buscar:hover {
+  border-color: #c47aa4;
+  box-shadow: 0 0 5px rgba(196, 122, 164, 0.3);
+  background-color: #f6ece6; /* opcional: levemente mais claro que o fundo atual */
+}
+
 .menu__buscar:focus {
   outline: none;
   border-color: #c47aa4;
@@ -52,20 +58,32 @@
   text-transform: uppercase;
 }
 .Botao1 {
-  border: 1px solid #9e5588;
-  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem 1.2rem;
   width: 150px;
   height: 51px;
-  left: 954px;
-  top: 32px;
+
+  background-color: transparent;
+  border: 2px solid #9e5588;
+  border-radius: 8px;
+
   color: #9e5588;
+  font-size: 1rem;
+  font-weight: 600;
   text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
 }
+
 .Botao1:hover {
-  cursor: pointer;
-  background: #d4e4fa;
-  font-size: 1.2rem;
+  background-color: #9e5588;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(158, 85, 136, 0.3);
+  transform: scale(1.05);
 }
+
 @media (max-width: 768px) {
   .menu {
     display: flex;

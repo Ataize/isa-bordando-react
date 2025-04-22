@@ -45,6 +45,14 @@ a.Botao2 {
   font-weight: bold;
   color: #9e5588;
   min-height: 50px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+a.Botao2:hover {
+  background-color: #9e5588;
+  color: white;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 @media screen and (max-width: 768px) {

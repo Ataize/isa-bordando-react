@@ -4,7 +4,7 @@ import "./GallerySection.css";
 const GallerySection = ({ title, id, products }: GallerySectionProps) => {
   return (
     <section className="gallery" id={id}>
-      <div className="gallery__section">
+      <div className="gallery__section--header">
         <h2 className="gallery__title">{title}</h2>
         <a className="gallery__seeAll" href="todos.html">
           Ver tudo
