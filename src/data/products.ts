@@ -1,8 +1,26 @@
 import { Product } from "../types/Product";
+import bastidorImg from "../assets/nome.jpg";
+import dataImg from "../assets/data.jpeg";
+import toalhaImg from "../assets/toalha.jpeg";
+import toalhimhasImg from "../assets/toalhinhas.jpeg";
+import aliancasImg from "../assets/aliancas.jpeg";
+import bolsaImg from "../assets/bolsas.jpg";
+import toalha2Img from "../assets/toalha2.jpeg";
+import colaresImg from "../assets/colares-bordado.jpg";
+import tenisImg from "../assets/tenis.jpeg";
+import portaMoedasImg from "../assets/bolsa.jpeg";
+import panoPratoImg from "../assets/pano-prato.jpeg";
+import portaRetratoImg from "../assets/porta-retrato.jpeg";
+import cactoImg from "../assets/cacto.jpg";
+import lacoImg from "../assets/laco.jpeg";
+import frase2Img from "../assets/frase2.jpg";
+import bordadoCoracaoImg from "../assets/bordado-coracao.jpg";
+import felicidadeImg from "../assets/felicidade.jpeg";
+import fraseImg from "../assets/frase.jpg";
 
 export const products: Product[] = [
   {
-    imageUrl: "./src/assets/nome.jpg",
+    imageUrl: bastidorImg,
     name: "Bastidor com nome",
     price: 60.0,
     description: "Nome feito com bordado livre em bastidor de XXcm",
@@ -10,7 +28,7 @@ export const products: Product[] = [
     id: 1,
   },
   {
-    imageUrl: "./src/assets/data.jpeg",
+    imageUrl: dataImg,
     name: " Bastidor com calendário",
     price: 85.0,
     description: "Calendário feito com bordado livre ",
@@ -18,7 +36,7 @@ export const products: Product[] = [
     id: 2,
   },
   {
-    imageUrl: "./src/assets/toalha.jpeg",
+    imageUrl: toalhaImg,
     name: "Jogo de toalhas",
     price: 100.0,
     description:
@@ -27,7 +45,7 @@ export const products: Product[] = [
     id: 3,
   },
   {
-    imageUrl: "./src/assets/toalhinhas.jpeg",
+    imageUrl: toalhimhasImg,
     name: "Toalhinha infantil",
     price: 25.0,
     description: "Toalha infantil bordada com ponto cruz",
@@ -35,7 +53,7 @@ export const products: Product[] = [
     id: 4,
   },
   {
-    imageUrl: "./src/assets/aliancas.jpeg",
+    imageUrl: aliancasImg,
     name: "Bastidor Data especial",
     price: 80.0,
     description: "Bastidor com data especial bordada em bordado livre com nome",
@@ -43,7 +61,7 @@ export const products: Product[] = [
     id: 5,
   },
   {
-    imageUrl: "./src/assets/toalha2.jpeg",
+    imageUrl: toalha2Img,
     name: "Jogo de toalhas",
     price: 100.0,
     description:
@@ -52,7 +70,7 @@ export const products: Product[] = [
     id: 6,
   },
   {
-    imageUrl: "./src/assets/bolsas.jpg",
+    imageUrl: bolsaImg,
     name: "Bolsa",
     price: 100.0,
     description: "Bolsa com bordado e pintura",
@@ -60,7 +78,7 @@ export const products: Product[] = [
     id: 7,
   },
   {
-    imageUrl: "./src/assets/colares-bordado.jpg",
+    imageUrl: colaresImg,
     name: "Colar",
     price: 50.0,
     description: "Colar com pingente bordado",
@@ -68,7 +86,7 @@ export const products: Product[] = [
     id: 8,
   },
   {
-    imageUrl: "./src/assets/tenis.jpeg",
+    imageUrl: tenisImg,
     name: "Tênnis",
     price: 70.0,
     description: "Bordado em tênnis",
@@ -76,7 +94,7 @@ export const products: Product[] = [
     id: 9,
   },
   {
-    imageUrl: "./src/assets/bolsa.jpeg",
+    imageUrl: portaMoedasImg,
     name: "Bolsa Porta moedas",
     price: 80.0,
     description: "Bolsa pequena bordada",
@@ -84,7 +102,7 @@ export const products: Product[] = [
     id: 10,
   },
   {
-    imageUrl: "./src/assets/pano-prato.jpeg",
+    imageUrl: panoPratoImg,
     name: "Pano de prato",
     price: 25.0,
     description: "Panos de prato bordadoem em ponto Cruz",
@@ -92,7 +110,7 @@ export const products: Product[] = [
     id: 11,
   },
   {
-    imageUrl: "./src/assets/porta-retrato.jpeg",
+    imageUrl: portaRetratoImg,
     name: "Quadro Flores",
     price: 50.0,
     description: "Quadro com flores bordadas em brodado livre",
@@ -100,7 +118,7 @@ export const products: Product[] = [
     id: 12,
   },
   {
-    imageUrl: "./src/assets/cacto.jpg",
+    imageUrl: cactoImg,
     name: "Bastidor com cactos",
     price: 70.0,
     description: "Bastidor com cactos bordados",
@@ -108,7 +126,7 @@ export const products: Product[] = [
     id: 13,
   },
   {
-    imageUrl: "./src/assets/laco.jpeg",
+    imageUrl: lacoImg,
     name: "Laço e gola",
     price: 70.0,
     description: "Laço e gola para bebês bordado",
@@ -116,7 +134,7 @@ export const products: Product[] = [
     id: 14,
   },
   {
-    imageUrl: "./src/assets/frase2.jpg",
+    imageUrl: frase2Img,
     name: "Bastidor com frase",
     price: 70.0,
     description: "Bastidor com frase: Deixa o sol entrar",
@@ -124,7 +142,7 @@ export const products: Product[] = [
     id: 15,
   },
   {
-    imageUrl: "./src/assets/bordado-coracao.jpg",
+    imageUrl: bordadoCoracaoImg,
     name: "Bastidor coração",
     price: 70.0,
     description: "Bastidor com coração",
@@ -132,7 +150,7 @@ export const products: Product[] = [
     id: 16,
   },
   {
-    imageUrl: "./src/assets/felicidade.jpeg",
+    imageUrl: felicidadeImg,
     name: "Bastidor com frase",
     price: 70.0,
     description: "Bastidor com frase: A felicidade está nas coisas simples",
@@ -140,7 +158,7 @@ export const products: Product[] = [
     id: 17,
   },
   {
-    imageUrl: "./src/assets/frase.jpg",
+    imageUrl: fraseImg,
     name: "Bastidor com frase",
     price: 70.0,
     description: "Bastidor com frase: Let the good times begin",

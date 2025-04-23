@@ -1,13 +1,14 @@
+import { Link } from "react-router-dom";
 import { Product } from "../../types/Product";
 
 const ProductCard = ({ id, imageUrl, name, price }: Product) => {
   return (
     <div className="gallery__products" data-gallery-products id={String(id)}>
-      <a href={`verProduto.html?id=${id}`}>
+      <Link to={`/product/${id}`}>
         <img
           className="gallery__image"
           src={imageUrl}
-          alt="Imagem do produto"
+          alt={`Imagem do produto${name}`}
           data-product-custom="imagem"
         />
         <p
@@ -22,7 +23,7 @@ const ProductCard = ({ id, imageUrl, name, price }: Product) => {
             currency: "BRL",
           })}
         </p>
-      </a>
+      </Link>
     </div>
   );
 };
